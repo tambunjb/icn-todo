@@ -5,11 +5,16 @@ Backend is in **NestJS** with Prisma and JWT auth, frontend is in **React (Vite 
 
 ---
 
-1. From the project root, build and start:
+1. In the `todo-api` folder:
+   - Rename `.env.template` → `.env.docker`
+   - Make sure `OPENAI_API_KEY` is set to your OpenAI token.
+2. In the `todo-web` folder:
+   - Rename `.env.template` → `.env.local`
+3. From the project root, build and start:
    ```bash
    docker compose up -d --build
    ```
-2. Frontend will be available at **http://localhost:3334**  
+4. Frontend will be available at **http://localhost:3334**  
    Backend API is at **http://localhost:3333**  
    Postgres runs on port **5432** inside the container.
 
